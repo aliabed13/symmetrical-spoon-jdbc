@@ -15,10 +15,10 @@ public class Main {
 	// update USER, PASS and DB URL according to credentials provided by the website:
 	// https://remotemysql.com/
 	// in future move these hard coded strings into separated config file or even better env variables
-	static private final String DB = "place_for_db_name";
+	static private final String DB = "oqAQDdZ1FM";
 	static private final String DB_URL = "jdbc:mysql://remotemysql.com/"+ DB + "?useSSL=false";
-	static private final String USER = "place_for_username";
-	static private final String PASS = "place_for_password";
+	static private final String USER = "oqAQDdZ1FM";
+	static private final String PASS = "SPzPh1TLd8";
 
 	public static void main(String[] args) throws SSLException {
 		Connection conn = null;
