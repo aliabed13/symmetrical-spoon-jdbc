@@ -32,16 +32,6 @@ public class Main {
 					rs.getInt("distance"), rs.getInt("price"));
 		}
 	}
-	public static void printTable2(Statement stmt) throws SQLException 
-	{
-		String sql = "SELECT ? FROM flights";
-		ResultSet rs = stmt.executeQuery(sql);
-		while (rs.next()) {			
-			System.out.format("Number %5s Origin %20s destinations %20s Distance %5d Price %5d\n",
-					rs.getInt("num"), rs.getString("origin"), rs.getString("destination"),
-					rs.getInt("distance"), rs.getInt("price"));
-		}
-	}
 
 	public static void main(String[] args) throws SSLException {
 		Connection conn = null;
